@@ -16,7 +16,7 @@ Explore and implement neural networks using the TensorFlow platform in Python. W
 
 Data: charity_data.csv; AlphabetSoupCharity_starter_code.ipynb converted to AlphabetSoupCharity.ipynb;
 
-Technologies: Python; Pandas; Google Colabortory; TensorFlow library; sklearn libraries;VSCode
+Technologies: Python; Pandas; Google Colabortory; TensorFlow library; Scikit-Learn libraries; VSCode
 
 ### Background
 
@@ -44,24 +44,64 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
 
 Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’ll need to preprocess the dataset in order to compile, train, and evaluate the neural network model later in Deliverable 2.
 
-The EIN and NAME columns have been dropped 
-The columns with more than 10 unique values have been grouped together 
-The categorical variables have been encoded using one-hot encoding 
-The preprocessed data is split into features and target arrays 
-The preprocessed data is split into training and testing datasets 
-The numerical values have been standardized using the StandardScaler() module
+**Original data**
+
+<img width="400" alt="Original Charity dataset screenshot" src="https://user-images.githubusercontent.com/85860367/139569525-15b864fa-5937-4ae0-8a14-8fdc0bdb52f0.PNG">
+
+**The EIN and NAME columns have been dropped**
+
+<img width="400" alt="Drop column screenshot" src="https://user-images.githubusercontent.com/85860367/139569403-87f8fb7b-d587-499b-9bbf-a783516b5e91.PNG">
+
+**The columns with more than 10 unique values have been grouped together**
+
+<img width="350" alt="Unique charity values" src="https://user-images.githubusercontent.com/85860367/139569427-3ead74a6-cdef-45fe-9204-3cf91c483259.PNG">
+
+**The categorical variables have been encoded using one-hot encoding**
+
+<img width="430" alt="Application types" src="https://user-images.githubusercontent.com/85860367/139570785-b3fec82f-87da-4583-93b5-f629cf5d42a3.PNG">
+
+<img width="430" alt="Replace app type screenshot" src="https://user-images.githubusercontent.com/85860367/139570994-9248aad2-094f-42c8-85c3-3054a3905714.PNG">
+
+<img width="430" alt="Classification screenshot" src="https://user-images.githubusercontent.com/85860367/139570822-f4d08a58-a314-481f-b08a-63799624c49e.PNG">
+
+<img width="430" alt="Replace cls class screenshot" src="https://user-images.githubusercontent.com/85860367/139570968-9f84ca2b-b50e-4cc2-8c80-852faee76841.PNG">
+
+<img width="430" alt="Onehotencoder screenshot" src="https://user-images.githubusercontent.com/85860367/139569494-a2a6af9f-6b14-4290-b15c-a62704d2ba6a.PNG">
+
+
+**The preprocessed data is split into features and target arrays**
+**The preprocessed data is split into training and testing datasets**
+**The numerical values have been standardized using the StandardScaler() module**
+
+<img width="430" alt="Split and Scale" src="https://user-images.githubusercontent.com/85860367/139569621-fa7f1f07-a193-438e-aae2-adb91614e4d4.PNG">
+
+**Merged DataFrame**
+
+<img width="430" alt="Merge screenshot" src="https://user-images.githubusercontent.com/85860367/139570746-9ef83860-7af3-4c4e-867f-7c982a041a3c.PNG">
+
 
 #### Deliverable 2: Compile, Train, and Evaluate the Model
 
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
 The neural network model using Tensorflow Keras contains working code that performs the following steps:
-The number of layers, the number of neurons per layer, and activation function are defined 
+
+The number of layers, the number of neurons per layer, and activation function are defined
 An output layer with an activation function is created 
 There is an output for the structure of the model 
 There is an output of the model’s loss and accuracy 
-The model's weights are saved every 5 epochs 
+The model's weights are saved every 5 epochs
 The results are saved to an HDF5 file
+
+<img width="430" alt="Defining model Deliverable 2" src="https://user-images.githubusercontent.com/85860367/139571218-b8f025df-e870-46d5-8300-4a5d27dc5aee.PNG">
+
+<img width="451" alt="Compile and Train Deliverable 2" src="https://user-images.githubusercontent.com/85860367/139571331-fc887052-fdf4-4e7c-9f78-0c9a3ae7e97e.PNG">
+
+<img width="427" alt="Model evaluation Deliverable 2" src="https://user-images.githubusercontent.com/85860367/139571421-d67f03bc-7497-4ccc-acce-a0c15ebe43f9.PNG">
+
+<img width="430" alt="Evaluation h5 with 50 epochs" src="https://user-images.githubusercontent.com/85860367/139571438-35ee9bee-21ee-48de-9c07-b79b6c563ac1.PNG">
+
+<img width="583" alt="Evaluation h5 with 100 epochs" src="https://user-images.githubusercontent.com/85860367/139571445-1d4737c0-f2f4-4ed4-a2fd-f3627cf111ab.PNG">
 
 #### Deliverable 3: Optimize the Model
 
